@@ -1,0 +1,22 @@
+.inner_c {
+    width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+    &::after {
+        content: " ";
+        clear: both;
+        visibility: hidden;
+        height: 0px;
+    }
+}
+.cl {
+    clear: both;
+}
+button {
+    cursor: pointer;
+}
+.text-button {
+    border-color: transparent;
+    outline: none;
+    background-color: transparent;
+}
