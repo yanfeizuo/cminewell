@@ -6,22 +6,22 @@
   </div>
 </template>
 <script>
-	export default {
-		name: 'About',
-		data() {
-			return {
-				name: ''
-			}
-		},
-		methods: {
-			test() {
-				this.axios.post('/api', {name: this.name})
-				.then(res => {
-					console.log(`res:${res.data[0].user_name}`)
-				}).catch(e => {
-					console.log(`e:${e}`)
-				})
-			}
-		}
-	}
+export default {
+  name: 'About',
+  data () {
+    return {
+      name: ''
+    }
+  },
+  methods: {
+    test () {
+      this.axios.post('/api', { name: this.name })
+        .then(res => {
+          console.log(`res:${res.data[0].user_name}`)
+        }).catch(e => {
+          console.log(`e:${e}`)
+        })
+    }
+  }
+}
 </script>

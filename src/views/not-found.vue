@@ -6,14 +6,14 @@
 </template>
 
 <script>
-	export default {
-		name: "Not-Found",
-		methods: {
-			back() {
-				this.$router.go(-1)
-			}
-		}
-	}
+export default {
+  name: 'Not-Found',
+  methods: {
+    back () {
+      this.$router.go(-1)
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>

@@ -1,20 +1,20 @@
 <template>
-	<div class="h-main">
-		<router-view></router-view>
-	</div>
+  <div class="h-main">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-	export default {
-		name: "AppMain",
-		data() {
-			return {}
-		}
-	}
+export default {
+  name: 'AppMain',
+  data() {
+    return {};
+  }
+};
 </script>
 
 <style lang="scss" scoped>
 .h-main {
-	padding-top: 60px;
+  padding-top: 60px;
 }
 </style>
