@@ -17,7 +17,7 @@ export default {
     computedClass() {
       const curr = this.$store.getters.getProductCurrNav;
       return {
-        prod_curr: this.data.id == curr
+        prod_curr: this.data.id === curr
       };
     }
   },

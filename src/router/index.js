@@ -19,12 +19,27 @@ const routes = [
         path: 'products',
         name: 'products',
         component: () => import('@/views/products/index.vue')
+      },
+      {
+        path: 'brands',
+        name: 'brands',
+        component: () => import('@/views/brands/index.vue')
+      },
+      {
+        path: 'new',
+        name: 'new',
+        component: () => import('@/views/news/index.vue')
+      },
+      {
+        path: 'about',
+        name: 'about',
+        component: () => import('@/views/about/index.vue')
+      },
+      {
+        path: 'join',
+        name: 'join',
+        component: () => import('@/views/join/index.vue')
       }
-      //  	{
-      //  		path: '(.*)?',
-      // 			name: 'Not-Found',
-      // 			component: () => import('@/views/not-found.vue')
-      //  	}
     ]
   }
 ];

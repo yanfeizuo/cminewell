@@ -10,8 +10,6 @@ import './style/index.scss';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
 
-import { home } from './config/home';
-
 Vue.use(ElementUI);
 
 Vue.use(VueAxios, axios);
@@ -19,7 +17,6 @@ Vue.use(VueAxios, axios);
 Vue.config.productionTip = false;
 
 new Vue({
-  home,
   router,
   store,
   render: (h) => h(App)

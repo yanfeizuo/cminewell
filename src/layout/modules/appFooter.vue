@@ -25,7 +25,6 @@ export default {
 
 <style lang="scss" scoped>
 .h-footer {
-  margin-top: 30px;
   background-color: #000;
   color: #818496;
   .claim {

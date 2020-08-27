@@ -1,5 +1,5 @@
 <template>
-  <div class="products_container">
+  <div class="main-container">
     <div class="prod_banner">
       <a href="javascript:;" :style="backImg"></a>
     </div>
@@ -19,7 +19,7 @@
 <script>
 import NavLiItem from './navLiItem';
 import Product from './product';
-import { getProductsRelative } from '../../config/products';
+import { productsRelative } from '../../config/products';
 export default {
   name: 'Products',
   components: {
@@ -28,17 +28,13 @@ export default {
   },
   data() {
     return {
-      banner: getProductsRelative.banner,
+      banner: productsRelative.banner,
+      navList: productsRelative.navList,
+      productList: productsRelative.productList,
       products: []
     };
   },
   computed: {
-    navList() {
-      return getProductsRelative.navList;
-    },
-    productList() {
-      return getProductsRelative.productList;
-    },
     backImg() {
       return {
         backgroundImage: 'url(' + this.banner.img + ')'
@@ -61,34 +57,31 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.products_container {
-  .prod_banner {
-    height: 400px;
-    a {
-      display: block;
-      height: 100%;
-      background-color: #03222f;
-      background-repeat: no-repeat;
-      background-position: center top;
-      background-size: cover;
-    }
+.prod_banner {
+  height: 400px;
+  a {
+    display: block;
+    height: 100%;
+    background-color: #03222f;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
   }
-  .prod_show {
-    box-sizing: border-box;
-    margin-top: 20px;
-    padding: 20px;
-    box-shadow: 0 0 10px 3px #e6e6f64f;
-    .prod_nav {
-      width: 196px;
-      font-size: 17px;
-      float: left;
-    }
-    .prod_container {
-      width: 744px;
-      float: left;
-      position: relative;
-      box-sizing: border-box;
-    }
+}
+.prod_show {
+  background-color: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px 3px #e6e6f64f;
+  .prod_nav {
+    width: 196px;
+    font-size: 17px;
+    float: left;
+  }
+  .prod_container {
+    width: 744px;
+    float: left;
+    position: relative;
   }
 }
 </style>

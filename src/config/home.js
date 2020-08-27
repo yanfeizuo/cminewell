@@ -11,6 +11,12 @@ banners.keys().map((item) => {
   });
 });
 
+const introduction = {
+  desc1: '成立于2020年7月28日',
+  desc2: '......',
+  desc3: '..'
+};
+
 products.keys().map((item) => {
   item = item.replace(/\./, '');
   productsList.push({
@@ -21,6 +27,7 @@ products.keys().map((item) => {
 module.exports = {
   home: {
     homeBanners,
+    introduction,
     productsList
   }
 };
