@@ -1,10 +1,8 @@
-const r1 = '/images/new/banners/';
+// const r1 = '/images/news/banner';
 
-const banner = [
-  {
-    img: r1 + 'new.png'
-  }
-];
+const banner = {
+  img: require('../assets/images/news/banner/b.png')
+};
 
 const news = [
   {
@@ -27,7 +25,7 @@ const news = [
       },
       {
         isLetter: false,
-        cont: '/images/new/images/b01.jpg'
+        cont: require('../assets/images/news/newsImages/image.jpg')
       }
     ]
   },

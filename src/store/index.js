@@ -10,7 +10,7 @@ export default new Vuex.Store({
       { name: '首页', route: 'home' },
       { name: '品牌', route: 'brands' },
       { name: '产品', route: 'products' },
-      { name: '公司动态', route: 'new' },
+      { name: '公司动态', route: 'news' },
       { name: '关于我们', route: 'about' },
       { name: '加入我们', route: 'join' }
     ],

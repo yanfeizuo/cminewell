@@ -1,10 +1,6 @@
-const r1 = '/images/join/banners/';
-const r2 = '/images/join/location/';
-const banner = [
-  {
-    img: r1 + 'join.png'
-  }
-];
+const banner = {
+  img: require('../assets/images/join/banner/banner.png')
+};
 
 const contact = {
   address: '地址：湖北省孝感市',
@@ -19,7 +15,7 @@ const business = {
 };
 
 const location = {
-  img: r2 + 'location.png'
+  img: require('../assets/images/join/locationImage/location.png')
 };
 
 module.exports = {

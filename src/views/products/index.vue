@@ -69,6 +69,7 @@ export default {
   }
 }
 .prod_show {
+  box-sizing: border-box;
   background-color: #fff;
   margin: 20px auto;
   padding: 20px;

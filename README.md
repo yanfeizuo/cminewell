@@ -32,30 +32,30 @@
 ## 项目结构
 
 - node_modules: 项目依赖包所在目录
-- public
-  - images： 项目中的图片
-    - home：首页模块
-      - banners：横幅展示图片
-      - lastestProds：最近产品图片
-    - brands：品牌模块
-      - banners
-      - brands：品牌图片（六边形）
-    - product：产品模块
-      - banners
-      - blackHead：黑头仪图片
-      - cleanser：清洁仪图片
-      - eye：美眼仪图片
-      - skin：嫩肤仪图片
-      - ultrasonic：超声波图片
-    - new：公司动态
-      - banners
-      - images：公司动态模块所需图片
-    - about：关于我们
-      - banners
-    - join：加入我们
-      - banners
-      - location：地图图片
 - src：项目源文件
+  - assets：存放图片资源目录
+    - images： 项目中的图片
+      - home：首页模块
+        - banners：横幅展示图片
+        - lastestProds：最近产品图片
+      - brands：品牌模块
+        - banners
+        - brands：品牌图片（六边形）
+      - product：产品模块
+        - banners
+        - blackHead：黑头仪图片
+        - cleanser：清洁仪图片
+        - eye：美眼仪图片
+        - skin：嫩肤仪图片
+        - ultrasonic：超声波图片
+      - news：公司动态
+        - banners
+        - newsImages：公司动态模块所需图片
+      - about：关于我们
+        - banners
+      - join：加入我们
+        - banners
+        - location：地图图片
   - config：项目中模块所需数据来源
     - home.js
 
@@ -63,7 +63,7 @@
 
     - products.js
 
-    - new.js
+    - news.js
 
     - about.js
 

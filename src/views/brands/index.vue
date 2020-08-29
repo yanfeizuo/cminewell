@@ -5,26 +5,8 @@
     </div>
     <div class="inner_c brands-body">
       <div class="container">
-        <!-- <div class="img-container c1">
-                    <img class="image" :src="bds[0].img" alt="">
-                </div>
-                <div class="img-container c2">
-                    <img class="image" :src="bds[0].img" alt="">
-                </div>
-                <div class="img-container c3">
-                    <img class="image" :src="bds[0].img" alt="">
-                </div>
-                <div class="img-container c4">
-                    <img class="image" :src="bds[0].img" alt="">
-                </div>
-                <div class="img-container c5">
-                    <img class="image" :src="bds[0].img" alt="">
-                </div>
-                <div class="img-container c6">
-                    <img class="image" :src="bds[0].img" alt="">
-                </div> -->
         <div v-for="n in 6" :key="n" :class="['img-container', 'c' + n]">
-          <img class="image" :src="bds[n - 1].img" alt="" />
+          <img class="image" :src="bds[n - 1]['img']" alt="" />
         </div>
       </div>
     </div>
@@ -36,9 +18,8 @@ import { brands } from '../../config/brands';
 export default {
   name: 'Brands',
   data() {
-    console.log(brands);
     return {
-      banners: brands.banner,
+      banner: brands.banner,
       bds: brands.bds,
       expect: brands.expect
     };
@@ -46,7 +27,7 @@ export default {
   computed: {
     backImg() {
       return {
-        backgroundImage: 'url(' + this.banners[0].img + ')'
+        backgroundImage: 'url(' + this.banner.img + ')'
       };
     }
   }

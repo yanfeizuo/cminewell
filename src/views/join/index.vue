@@ -38,7 +38,7 @@ export default {
   name: 'Join',
   data() {
     return {
-      banners: join.banner,
+      banner: join.banner,
       contact: join.contact,
       business: join.business,
       location: join.location
@@ -47,7 +47,7 @@ export default {
   computed: {
     backImg() {
       return {
-        backgroundImage: 'url(' + this.banners[0].img + ')'
+        backgroundImage: 'url(' + this.banner.img + ')'
       };
     },
     locationImg() {

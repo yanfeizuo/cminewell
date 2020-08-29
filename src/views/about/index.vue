@@ -32,7 +32,7 @@ export default {
   name: 'About',
   data() {
     return {
-      banners: about.banner,
+      banner: about.banner,
       introduction: about.introduction,
       events: about.events
     };
@@ -40,7 +40,7 @@ export default {
   computed: {
     backImg() {
       return {
-        backgroundImage: 'url(' + this.banners[0].img + ')'
+        backgroundImage: 'url(' + this.banner.img + ')'
       };
     }
   }

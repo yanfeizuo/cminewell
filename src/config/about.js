@@ -1,9 +1,7 @@
-const r1 = '/images/about/banners/';
-const banner = [
-  {
-    img: r1 + 'about.png'
-  }
-];
+const banner = {
+  img: require('../assets/images/about/banner/banner.png')
+};
+
 const introduction = {
   title: '公司简介',
   content: [`公司简介`, `第二段`, `第三段`]

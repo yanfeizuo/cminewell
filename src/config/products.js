@@ -1,7 +1,6 @@
-const r1 = '/images/product';
-const r2 = '/images/product/banner';
-
-const productList = {};
+const banner = {
+  img: require('../assets/images/product/banner/banner.png')
+};
 
 const navList = [
   {
@@ -36,40 +35,44 @@ const navList = [
   }
 ];
 
-const productInfo = require('./product-info.js').productInfo;
-console.log(productInfo);
-
-const banner = {};
-
-const products = require.context('../../public/images/product', true);
-const banners = require.context('../../public/images/product/banner', true);
-
-products.keys().map((item) => {
-  item = item.replace(/\./, '');
-  const items = item.split('/');
-  const keyName = items[1];
-  const picName = items[items.length - 1].split('.')[0];
-  const productListKeys = Object.keys(productList);
-  console.log('keyName', keyName, 'picName', picName);
-  const alreadExist = productListKeys.includes(keyName);
-  if (alreadExist) {
-    productList[keyName].push({
-      img: r1 + item,
-      desc: productInfo[keyName] ? (productInfo[keyName][picName] ? productInfo[keyName][picName] : {}) : {}
-    });
-  } else {
-    productList[keyName] = [
-      {
-        img: r1 + item,
-        desc: productInfo[keyName] ? (productInfo[keyName][picName] ? productInfo[keyName][picName] : {}) : {}
+const productList = {
+  cleanser: [
+    {
+      img: require('../assets/images/product/cleanser/c01.jpg'),
+      desc: {
+        name: '清洁仪',
+        effects: '清洁脸部'
       }
-    ];
-  }
-});
-banners.keys().map((item) => {
-  item = item.replace(/\./, '');
-  banner.img = r2 + item;
-});
+    }
+  ],
+  blackHead: [
+    {
+      img: require('../assets/images/product/blackHead/b01.jpg'),
+      desc: {
+        name: '黑头仪',
+        effects: '吸黑头'
+      }
+    }
+  ],
+  skin: [
+    {
+      img: require('../assets/images/product/skin/a03.jpg'),
+      desc: {}
+    }
+  ],
+  eye: [
+    {
+      img: require('../assets/images/product/eye/d03.jpg'),
+      desc: {}
+    }
+  ],
+  ultrasonic: [
+    {
+      img: require('../assets/images/product/ultrasonic/e03.jpg'),
+      desc: {}
+    }
+  ]
+};
 
 module.exports = {
   productsRelative: {

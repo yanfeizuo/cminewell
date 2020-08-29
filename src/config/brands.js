@@ -1,28 +1,25 @@
-const r1 = '/images/brands/banners/';
-const r2 = '/images/brands/brands/';
-const banner = [
-  {
-    img: r1 + 'brands.png'
-  }
-];
+const banner = {
+  img: require('../assets/images/brand/banner/banner.png')
+};
+
 const bds = [
   {
-    img: r2 + 'brand1.png'
+    img: require('../assets/images/brand/brandImages/b1.png')
   },
   {
-    img: r2 + 'expect.png'
+    img: require('../assets/images/brand/brandImages/e.png')
   },
   {
-    img: r2 + 'expect.png'
+    img: require('../assets/images/brand/brandImages/e.png')
   },
   {
-    img: r2 + 'expect.png'
+    img: require('../assets/images/brand/brandImages/e.png')
   },
   {
-    img: r2 + 'expect.png'
+    img: require('../assets/images/brand/brandImages/e.png')
   },
   {
-    img: r2 + 'expect.png'
+    img: require('../assets/images/brand/brandImages/e.png')
   }
 ];
 

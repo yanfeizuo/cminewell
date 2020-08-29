@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import { news } from '../../config/new';
+import { news } from '../../config/news';
 import ParagraphCom from './paragraph';
 export default {
   name: 'New',
@@ -19,14 +19,14 @@ export default {
   },
   data() {
     return {
-      banners: news.banner,
+      banner: news.banner,
       news: news.news
     };
   },
   computed: {
     backImg() {
       return {
-        backgroundImage: 'url(' + this.banners[0].img + ')'
+        backgroundImage: 'url(' + this.banner.img + ')'
       };
     }
   }
@@ -46,6 +46,7 @@ export default {
   }
 }
 .news-body {
+  box-sizing: border-box;
   background-color: #fff;
   margin: 20px auto;
   padding: 20px;

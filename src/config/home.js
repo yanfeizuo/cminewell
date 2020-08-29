@@ -1,15 +1,14 @@
-const prefix = '/images/home/';
-const homeBanners = [];
-const productsList = [];
-const banners = require.context('../../public/images/home/banners', true);
-const products = require.context('../../public/images/home/lastestProds', true);
-
-banners.keys().map((item) => {
-  item = item.replace(/\./, '');
-  homeBanners.push({
-    img: prefix + 'banners' + item
-  });
-});
+const homeBanners = [
+  {
+    img: require('../assets/images/home/banners/1.jpg')
+  },
+  {
+    img: require('../assets/images/home/banners/2.jpg')
+  },
+  {
+    img: require('../assets/images/home/banners/3.jpg')
+  }
+];
 
 const introduction = {
   desc1: '成立于2020年7月28日',
@@ -17,12 +16,17 @@ const introduction = {
   desc3: '..'
 };
 
-products.keys().map((item) => {
-  item = item.replace(/\./, '');
-  productsList.push({
-    img: prefix + 'lastestProds' + item
-  });
-});
+const productsList = [
+  {
+    img: require('../assets/images/home/lastestProds/1.jpg')
+  },
+  {
+    img: require('../assets/images/home/lastestProds/2.jpg')
+  },
+  {
+    img: require('../assets/images/home/lastestProds/3.jpg')
+  }
+];
 
 module.exports = {
   home: {

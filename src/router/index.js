@@ -26,8 +26,8 @@ const routes = [
         component: () => import('@/views/brands/index.vue')
       },
       {
-        path: 'new',
-        name: 'new',
+        path: 'news',
+        name: 'news',
         component: () => import('@/views/news/index.vue')
       },
       {
